@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="App logo" />
+    </header>
+    <main>
+      <h1>Bill</h1>
+      <inputn type="number" />
+      <h2>Select Tip %</h2>
+      <div class="tip-container">
+        <div>5%</div>
+        <div>10%</div>
+        <div>15%</div>
+        <div>25%</div>
+        <div>50%</div>
+        <div>Custom</div>
+      </div>
+      <h2>Number of People</h2>
+      <input type="number" />
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="tip-result">
+        <div>
+          <div>
+            <span>Tip Amount</span>
+            <span>/ person</span>
+          </div>
+          <div>
+            <span>$5</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span>Total</span>
+            <span>/ person</span>
+          </div>
+          <div>
+            <span>$20</span>
+          </div>
+        </div>
+        <button>Reset</button>
+      </div>
+    </main>
+  </body>
 </html>
