@@ -21,19 +21,19 @@
       <img src="./images/logo.svg" alt="App logo" />
     </header>
     <main>
-      <h1>Bill</h1>
+      <h2>Bill</h2>
       <div class="input-container">
         <img src="./images/icon-dollar.svg" alt="dollar sign" />
         <input type="number" />
       </div>
       <h2>Select Tip %</h2>
       <div class="tip-container">
-        <div>5%</div>
-        <div>10%</div>
-        <div>15%</div>
-        <div>25%</div>
-        <div>50%</div>
-        <div>Custom</div>
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input type="number" placeholder="Custom" />
       </div>
       <h2>Number of People</h2>
       <div class="input-container">
@@ -41,25 +41,25 @@
         <input type="number" />
       </div>
       <div class="tip-result">
-        <div>
-          <div>
+        <div class="tip-amount">
+          <div class="tip">
             <span>Tip Amount</span>
             <span>/ person</span>
           </div>
-          <div>
+          <div class="tip-amount-value">
             <span>$5</span>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="total-amount">
+          <div class="total">
             <span>Total</span>
             <span>/ person</span>
           </div>
-          <div>
+          <div class="total-amount-value">
             <span>$20</span>
           </div>
         </div>
-        <button>Reset</button>
+        <button>RESET</button>
       </div>
     </main>
   </body>
