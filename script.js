@@ -50,6 +50,7 @@ function handleNumberInput(e) {
 
 function handleTipCustom(e) {
     tipCustom = parseFloat(e.target.value) / 100;
+    tipBtns.forEach(element => element.classList.remove("active"))
     tipPercentage = 0; // Reset selected tip percentage
     calculateAndDisplayResults();
 }
