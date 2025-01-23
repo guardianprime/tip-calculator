@@ -6,6 +6,19 @@
   box-sizing: border-box;
 }
 
+/* UTILITIES */
+/* for error message */
+
+.error-message {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+/* ------- */
+
 body {
   background-color: hsl(185, 41%, 84%);
   font-family: "Space Mono", serif;
@@ -60,6 +73,12 @@ h2 {
   height: 40px;
   border-radius: 10px;
   background-color: hsl(189, 41%, 97%);
+}
+
+.number-input__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .tip-container {

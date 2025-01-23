@@ -33,9 +33,12 @@
           <button class="tip-btn">15%</button>
           <button class="tip-btn">25%</button>
           <button class="tip-btn">50%</button>
-          <input type="number" placeholder="Custom" id="tip-custom"/>
+          <input type="number" placeholder="Custom" id="tip-custom" />
         </div>
-        <h2>Number of People</h2>
+        <div class="number-input__wrapper">
+          <h2>Number of People</h2>
+          <span class="error-message" id="error-message">Can't be 0</span>
+        </div>
         <div class="input-container">
           <input type="number" placeholder="0" id="number-input" />
         </div>
@@ -62,7 +65,7 @@
               </div>
             </div>
           </div>
-          <button>RESET</button>
+          <button id="reset-btn">RESET</button>
         </div>
       </section>
     </main>
