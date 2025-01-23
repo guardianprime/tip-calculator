@@ -21,46 +21,52 @@
       <img src="./images/logo.svg" alt="App logo" />
     </header>
     <main>
-      <h2>Bill</h2>
-      <div class="input-container">
-        <img src="./images/icon-dollar.svg" alt="dollar sign" />
-        <input type="number" />
-      </div>
-      <h2>Select Tip %</h2>
-      <div class="tip-container">
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <input type="number" placeholder="Custom" />
-      </div>
-      <h2>Number of People</h2>
-      <div class="input-container">
-        <img src="./images/icon-person.svg" alt="person icon" />
-        <input type="number" />
-      </div>
-      <div class="tip-result">
-        <div class="tip-amount">
-          <div class="tip">
-            <span>Tip Amount</span>
-            <span>/ person</span>
-          </div>
-          <div class="tip-amount-value">
-            <span>$5.5</span>
-          </div>
+      <section>
+        <h2>Bill</h2>
+        <div class="input-container">
+          <img src="./images/icon-dollar.svg" alt="dollar sign" />
+          <input type="number" placeholder="0" />
         </div>
-        <div class="total-amount">
-          <div class="total">
-            <span>Total</span>
-            <span>/ person</span>
-          </div>
-          <div class="total-amount-value">
-            <span>$28.78</span>
-          </div>
+        <h2>Select Tip %</h2>
+        <div class="tip-container">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="number" placeholder="Custom" />
         </div>
-        <button>RESET</button>
-      </div>
+        <h2>Number of People</h2>
+        <div class="input-container">
+          <img src="./images/icon-person.svg" alt="person icon" />
+          <input type="number" placeholder="0" />
+        </div>
+      </section>
+      <section>
+        <div class="tip-result">
+          <div class="tip-wrapper">
+            <div class="tip-amount">
+              <div class="tip">
+                <span>Tip Amount</span>
+                <span>/ person</span>
+              </div>
+              <div class="tip-amount-value">
+                <span>$0.00</span>
+              </div>
+            </div>
+            <div class="total-amount">
+              <div class="total">
+                <span>Total</span>
+                <span>/ person</span>
+              </div>
+              <div class="total-amount-value">
+                <span>$0.00</span>
+              </div>
+            </div>
+          </div>
+          <button>RESET</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>

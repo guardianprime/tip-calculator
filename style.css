@@ -117,13 +117,18 @@ h2 {
   border-radius: 10px;
 }
 
+.tip-wrapper {
+  height: 70%;
+  width: 100%;
+}
+
 .tip-amount,
 .total-amount {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5px 0px;
-  height: 35%;
+  height: 50%;
   width: 100%;
 }
 
@@ -151,4 +156,65 @@ h2 {
   color: hsl(172, 67%, 45%);
   font-size: 1.4rem;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 70%;
+    height: 70%;
+    margin: 10px auto;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  section {
+    height: 100%;
+    width: 100%;
+  }
+
+  .tip-container {
+    height: 40%;
+  }
+
+  .tip-result {
+    height: 100%;
+  }
+
+  .tip-amount,
+  .total-amount {
+    height: 20%;
+  }
+
+  .tip-wrapper {
+    height: 85%;
+  }
+
+  .tip-result button {
+    height: 12%;
+  }
+
+  .tip:first-child,
+  .total:first-child {
+    font-size: 1rem;
+  }
+
+  .tip span:last-of-type,
+  .total span:last-of-type {
+    font-size: 0.8rem;
+  }
+
+  .tip-amount-value span,
+  .total-amount-value span {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .tip-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
