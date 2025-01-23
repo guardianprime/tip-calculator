@@ -25,21 +25,21 @@
         <h2>Bill</h2>
         <div class="input-container">
           <img src="./images/icon-dollar.svg" alt="dollar sign" />
-          <input type="number" placeholder="0" />
+          <input type="number" placeholder="0" id="bill-input" />
         </div>
         <h2>Select Tip %</h2>
         <div class="tip-container">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="number" placeholder="Custom" />
+          <button class="tip-btn">5%</button>
+          <button class="tip-btn">10%</button>
+          <button class="tip-btn">15%</button>
+          <button class="tip-btn">25%</button>
+          <button class="tip-btn">50%</button>
+          <input type="number" placeholder="Custom" id="tip-custom"/>
         </div>
         <h2>Number of People</h2>
         <div class="input-container">
           <img src="./images/icon-person.svg" alt="person icon" />
-          <input type="number" placeholder="0" />
+          <input type="number" placeholder="0" id="number-input" />
         </div>
       </section>
       <section>
@@ -51,7 +51,7 @@
                 <span>/ person</span>
               </div>
               <div class="tip-amount-value">
-                <span>$0.00</span>
+                <span id="tip-value">$0.00</span>
               </div>
             </div>
             <div class="total-amount">
@@ -60,7 +60,7 @@
                 <span>/ person</span>
               </div>
               <div class="total-amount-value">
-                <span>$0.00</span>
+                <span id="total-value">$0.00</span>
               </div>
             </div>
           </div>
