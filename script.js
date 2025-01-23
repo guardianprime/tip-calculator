@@ -13,6 +13,10 @@ billInput.addEventListener("input", handleBillInput);
 numberInput.addEventListener("input", handleNumberInput);
 
 function handleBtnClick(e) {
+    tipBtns.forEach(element => {
+        element.classList.remove("active");
+    });
+    e.target.classList.add("active");
     console.log(e.target.textContent);
 }
 
