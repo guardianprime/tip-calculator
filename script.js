@@ -78,7 +78,9 @@ function calculateAndDisplayResults() {
     }
 }
 
+
 function reset() {
+    if (!billInput.value || !numberInput.value) return;
     billInput.value = "";
     numberInput.value = "";
     tipCustomInput.value = "";
