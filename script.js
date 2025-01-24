@@ -11,9 +11,19 @@ tipBtns.forEach(element => {
     element.addEventListener("click", handleBtnClick);
 });
 
-billInput.addEventListener("input", handleBillInput);
-numberInput.addEventListener("input", handleNumberInput);
-tipCustomInput.addEventListener("input", handleTipCustom);
+// Debounce function to limit the rate of function execution
+function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
+// Add event listeners with debounced handlers
+billInput.addEventListener("input", debounce(handleBillInput, 300));
+numberInput.addEventListener("input", debounce(handleNumberInput, 300));
+tipCustomInput.addEventListener("input", debounce(handleTipCustom, 300));
 resetBtn.addEventListener("click", reset);
 
 let numberOfPersons = 0;
@@ -40,10 +50,10 @@ function handleNumberInput(e) {
     numberOfPersons = parseInt(e.target.value);
     if (numberOfPersons === 0) {
         errorMessage.classList.remove("hide");
-        numberInput.style.border = "1px solid red";
+        numberInput.style.outline = "3px solid red";
     } else {
         errorMessage.classList.add("hide");
-        numberInput.style.border = "none";
+        numberInput.style.outline = "none";
     }
     calculateAndDisplayResults();
 }
@@ -72,13 +82,11 @@ function reset() {
     billInput.value = "";
     numberInput.value = "";
     tipCustomInput.value = "";
-    tipBtns.forEach(element => {
-        element.classList.remove("active");
-    });
+    tipBtns.forEach(element => element.classList.remove("active"));
     tipValue.textContent = "$0.00";
     totalValue.textContent = "$0.00";
     errorMessage.classList.add("hide");
-    numberInput.style.border = "none";
+    numberInput.style.outline = "none";
     bill = 0;
     numberOfPersons = 0;
     tipPercentage = 0;
