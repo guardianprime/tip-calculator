@@ -48,7 +48,7 @@ function handleBillInput(e) {
 
 function handleNumberInput(e) {
     numberOfPersons = parseInt(e.target.value);
-    if (numberOfPersons === 0) {
+    if (numberOfPersons === 0 && billInput.value !== "") {
         errorMessage.classList.remove("hide");
         numberInput.style.outline = "3px solid red";
     } else {
