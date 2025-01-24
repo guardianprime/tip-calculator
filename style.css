@@ -40,6 +40,7 @@ main {
   padding: 30px;
 }
 
+h1,
 h2 {
   font-size: 1rem;
   color: hsl(186, 14%, 43%);
@@ -268,5 +269,13 @@ h2 {
   .tip-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .tip-result {
+    padding: 50px;
+  }
+
+  .tip-result button {
+    height: 16%;
   }
 }
